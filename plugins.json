@@ -1,1 +1,23 @@
-
+[
+  {
+     "iconUrl": "https://www.google.com/s2/favicons?domain=dramaid.nl&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "",
+        "fileSize": 20856,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "Hexated",
+            "TeKuma25"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "Movie"
+        ],
+        "version": 13,
+        "internalName": "Dramaid",
+        "description": "Include: Oppadrama",
+        "url": "https://raw.githubusercontent.com/TeKuma25/IndoStream/builds/Dramaid.cs3",
+        "name": "Dramaid"
+  }
+]
