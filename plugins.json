@@ -17,7 +17,7 @@
         "version": 13,
         "internalName": "Dramaid",
         "description": "Include: Oppadrama",
-        "url": "https://github.com/CodeAxella/Cloudstream/builds/DramaidProvider.cs3",
+        "url": "https://raw.githubusercontent.com/CodeAxella/Cloudstream/builds/DramaidProvider.cs3",
         "name": "Dramaid"
   }
 ]
