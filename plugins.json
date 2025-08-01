@@ -19,5 +19,27 @@
         "description": "Include: Oppadrama",
         "url": "https://raw.githubusercontent.com/CodeAxella/Cloudstream/builds/DramaidProvider.cs3",
         "name": "Dramaid"
+  },
+  {
+	  "iconUrl": "https://github.com/SaurabhKaperwan/CSX/raw/refs/heads/master/CineStream/icon.jpg",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/SaurabhKaperwan/CSX",
+        "fileSize": 303399,
+        "status": 1,
+        "authors": [
+            "megix"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "AsianDrama",
+            "Anime",
+            "Torrent"
+        ],
+        "version": 193,
+        "internalName": "CineStream",
+        "description": "One stop solution for Movies, Series, Anime, AsianDrama and Torrents",
+        "url": "https://raw.githubusercontent.com/SaurabhKaperwan/CSX/builds/CineStream.cs3",
+        "name": "CineStream"
   }
 ]
