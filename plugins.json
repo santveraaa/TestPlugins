@@ -43,15 +43,14 @@
         "name": "CineStream"
   },
   {
-	  "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
+	  "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/jellyfin.png",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
-        "fileSize": 737887,
+        "fileSize": 59437,
         "status": 1,
         "language": "en",
         "authors": [
-            "Phisher98",
-            "Hexated"
+            "Phisher98"
         ],
         "tvTypes": [
             "AsianDrama",
@@ -61,32 +60,10 @@
             "Cartoon",
             "AnimeMovie"
         ],
-        "version": 362,
-        "internalName": "StreamPlay",
-        "description": "#1 best extention based on MultiAPI",
-        "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/StreamPlay.cs3",
-        "name": "StreamPlay"
-  },
-  {
-	   "iconUrl": "https://www.google.com/s2/favicons?domain=tv7.lk21.am.in&sz=%size%",
-        "jarFileSize": 84949,
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
-        "fileSize": 19496,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated,Phisher98"
-        ],
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
         "version": 3,
-        "internalName": "LayarKacaProvider",
-        "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/LayarKacaProvider.jar",
-        "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/LayarKacaProvider.cs3",
-        "name": "LayarKacaProvider"
+        "internalName": "Jellyfin",
+        "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media",
+        "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Jellyfin.cs3",
+        "name": "Jellyfin"
   }
-]
+ ]
