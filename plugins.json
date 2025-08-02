@@ -41,29 +41,5 @@
         "description": "One stop solution for Movies, Series, Anime, AsianDrama and Torrents",
         "url": "https://raw.githubusercontent.com/SaurabhKaperwan/CSX/builds/CineStream.cs3",
         "name": "CineStream"
-  },
-  {
-	  "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/jellyfin.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/santveraaa/TestPlugins",
-        "fileSize": 59437,
-        "status": 1,
-        "language": "en",
-        "authors": [
-            "Phisher98"
-        ],
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Anime",
-            "Movie",
-            "Cartoon",
-            "AnimeMovie"
-        ],
-        "version": 3,
-        "internalName": "Jellyfin",
-        "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media",
-        "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Jellyfin.cs3",
-        "name": "Jellyfin"
   }
- ]
+ 
