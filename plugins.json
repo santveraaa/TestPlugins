@@ -111,5 +111,27 @@
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/KisskhProvider.jar",
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/KisskhProvider.cs3",
         "name": "KisskhProvider"
+  },
+  {
+	  "iconUrl": "https://torrentio.strem.fun/images/logo_v1.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/doGior/doGiorsHadEnough",
+        "fileSize": 38364,
+        "status": 1,
+        "language": "it",
+        "authors": [
+            "doGior"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Torrent",
+            "Documentary"
+        ],
+        "version": 3,
+        "internalName": "Torrentio",
+        "description": "Torrents from Torrentio",
+        "url": "https://raw.githubusercontent.com/doGior/doGiorsHadEnough/builds/Torrentio.cs3",
+        "name": "Torrentio"
   }
  ]
