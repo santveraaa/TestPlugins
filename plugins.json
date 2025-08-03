@@ -2,7 +2,7 @@
   {
      "iconUrl": "https://www.google.com/s2/favicons?domain=dramaid.nl&sz=%size%",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/santveraaa/TestPlugins",
+        "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
         "fileSize": 20856,
         "status": 1,
         "language": "id",
@@ -17,7 +17,7 @@
         "version": 13,
         "internalName": "Dramaid",
         "description": "Include: Oppadrama",
-        "url": "https://raw.githubusercontent.com/CodeAxella/Cloudstream/builds/DramaidProvider.cs3",
+        "url": "https://raw.githubusercontent.com/TeKuma25/IndoStream/builds/Dramaid.cs3",
         "name": "Dramaid"
   },
   {
