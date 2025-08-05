@@ -156,24 +156,44 @@
         "name": "MyFlixer"
   },
   {
-	  "iconUrl": "https://raw.githubusercontent.com/CodeAxella/Cloudstream/main/Moviebox.png",
+	  "iconUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/MovieBoxProvider/icon.png",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/recloudstream/cloudstream",
-        "fileSize": 43823,
+        "repositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
+        "fileSize": 44593,
         "status": 1,
-        "language": "id",
+        "language": "ta",
         "authors": [
-            "CodeSannz"
+            "NivinCNC"
         ],
         "tvTypes": [
             "Movie",
             "TvSeries"
         ],
-        "version": 7,
-        "internalName": "MovieBox",
-        "description": "MovieBox Adalah layanan yang menyediakan akses ke film dan acara TV secara gratis.",
-        "url": "https://raw.githubusercontent.com/CodeAxella/Cloudstream/builds/MovieBoxProvider.cs3",
-        "name": "MovieBox"
+        "version": 1,
+        "internalName": "MovieBoxProviderIN",
+        "description": "Multi Language Movies and Series Provider (IN)",
+        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MovieBoxProviderIN.cs3",
+        "name": "MovieBoxProviderIN"
+  },
+  {
+	  "iconUrl": "https://images.dwncdn.net/images/t_app-icon-l/p/b0c9663c-0d61-4941-b12f-91c58c06189f/1137087733/hdo-box-logo",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
+        "fileSize": 97659,
+        "status": 1,
+        "language": "ta",
+        "authors": [
+            "NivinCNC"
+        ],
+        "tvTypes": [
+            "Movies",
+            "TvSeries"
+        ],
+        "version": 2,
+        "internalName": "HDOProvider",
+        "description": "HDO provider",
+        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/HDOProvider.cs3",
+        "name": "HDOProvider"
   }
  
  ]
