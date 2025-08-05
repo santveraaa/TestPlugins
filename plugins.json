@@ -154,6 +154,26 @@
         "description": "Watch movies and series from Flixerz",
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/MyFlixer.cs3",
         "name": "MyFlixer"
+  },
+  {
+	  "iconUrl": "https://raw.githubusercontent.com/CodeAxella/Cloudstream/main/Moviebox.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/recloudstream/cloudstream",
+        "fileSize": 43823,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "CodeSannz"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 7,
+        "internalName": "MovieBox",
+        "description": "MovieBox Adalah layanan yang menyediakan akses ke film dan acara TV secara gratis.",
+        "url": "https://raw.githubusercontent.com/CodeAxella/Cloudstream/builds/MovieBoxProvider.cs3",
+        "name": "MovieBox"
   }
  
  ]
