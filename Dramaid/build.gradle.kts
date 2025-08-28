@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
 	implementation(kotlin("stdlib"))
-    implementation("com.lagradost:cloudstream3-core:+")
+    implementation("com.lagradost:cloudstream3-core:3.6.5")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation("org.jsoup:jsoup:1.17.1")
 }
@@ -24,10 +24,10 @@ configure<JavaPluginExtension> {
 }
 
 tasks {
-    val jar by getting(Jar::class) {
-        archiveFileName.set("Dramaid-v${project.version}.cs3")
-        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-        from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
+    withType<KotlinCompile> {
+        kotlinOptions {
+            jvmTarget = "17"
+            freeCompilerArgs = listOf("-Xjsr305=strict")
+        }
     }
-    
 }
