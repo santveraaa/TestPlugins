@@ -1,5 +1,7 @@
 plugins {
+    kotlin("jvm") version "1.9.0"
     `java-library`
+    `maven-publish`
 }
 
 version = "13"
@@ -10,6 +12,7 @@ repositories {
 }
 
 dependencies {
+	implementation(kotlin("stdlib"))
     implementation("com.lagradost:cloudstream3-core:+")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation("org.jsoup:jsoup:1.17.1")
@@ -17,8 +20,8 @@ dependencies {
 
 // Tambahkan konfigurasi Java plugin
 configure<JavaPluginExtension> {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 tasks {
