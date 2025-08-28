@@ -15,7 +15,7 @@ repositories {
 
 dependencies {
 	implementation(kotlin("stdlib"))
-    implementation("com.lagradost:cloudstream3-core:3.6.5")
+	implementation("com.lagradost:cloudstream3-core:4.0.4") 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation("org.jsoup:jsoup:1.17.1")
 }
