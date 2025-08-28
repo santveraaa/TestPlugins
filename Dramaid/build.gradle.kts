@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 
 plugins {
-    `java-library`
-    `maven-publish`
+    kotlin("android") // Ganti dengan kotlin android
+    id("com.android.library") // Tambahkan plugin android library
 }
 
 version = "13"
