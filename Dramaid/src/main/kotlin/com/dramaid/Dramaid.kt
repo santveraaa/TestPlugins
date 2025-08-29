@@ -126,8 +126,8 @@ open class Dramaid : MainAPI() {
     }
 
     private data class Sources(
-    @JsonProperty("file") val file: String,
-    @JsonProperty("label") val label: String,
-    @JsonProperty("type") val type: String
-	)
-}
+        @JsonProperty("file") val file: String,
+        @JsonProperty("label") val label: String,
+        @JsonProperty("type") val type: String
+    )
+} // Closing brace untuk class Dramaid
