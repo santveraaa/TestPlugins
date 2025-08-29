@@ -3,7 +3,7 @@ package com.dramaid
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
-import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.newExtractorLink
 import com.lagradost.cloudstream3.utils.getQualityFromName
 import com.lagradost.cloudstream3.utils.loadExtractor
 import org.jsoup.Jsoup
@@ -144,7 +144,7 @@ open class Dramaid : MainAPI() {
         url: String,
         name: String,
         subCallback: (SubtitleFile) -> Unit,
-        sourceCallback: (ExtractorLink) -> Unit
+        sourceCallback: (newExtractorLink) -> Unit
     ) {
         val server = app.get(url).document.selectFirst(".picasa")?.nextElementSibling()?.data()
 
@@ -157,7 +157,7 @@ open class Dramaid : MainAPI() {
 
         tryParseJson<List<Sources>>(source)?.map {
             sourceCallback(
-                ExtractorLink(
+                newExtractorLink(
                     name,
                     "Drive",
                     fixUrl(it.file),
@@ -182,7 +182,7 @@ open class Dramaid : MainAPI() {
         data: String,
         isCasting: Boolean,
         subtitleCallback: (SubtitleFile) -> Unit,
-        callback: (ExtractorLink) -> Unit
+        callback: (newExtractorLink) -> Unit
     ): Boolean {
         val document = app.get(data).document
         val sources = document.select(".mobius > .mirror > option").mapNotNull {
