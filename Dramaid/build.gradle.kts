@@ -1,6 +1,4 @@
-plugins {
-    kotlin("jvm")
-}
+
 
 group = "com.example.dramaid"
 version = "1.0.0"
