@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.kotlin.jvm")
+    kotlin("jvm")
 }
 
 group = "com.example.dramaid"
