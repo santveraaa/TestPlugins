@@ -129,4 +129,5 @@ open class Dramaid : MainAPI() {
     @JsonProperty("file") val file: String,
     @JsonProperty("label") val label: String,
     @JsonProperty("type") val type: String
+	)
 )
