@@ -123,89 +123,9 @@ open class Dramaid : MainAPI() {
             this.tags = tags
             this.recommendations = recommendations
         }
-
     }
 
     private data class Sources(
         @JsonProperty("file") val file: String,
         @JsonProperty("label") val label: String,
-        @JsonProperty("type") val type: String,
-        @JsonProperty("default") val default: Boolean?
-    )
-
-    private data class Tracks(
-        @JsonProperty("file") val file: String,
-        @JsonProperty("label") val label: String,
-        @JsonProperty("kind") val type: String,
-        @JsonProperty("default") val default: Boolean?
-    )
-
-    private suspend fun invokeDriveSource(
-        url: String,
-        name: String,
-        subCallback: (SubtitleFile) -> Unit,
-        sourceCallback: (newExtractorLink) -> Unit
-    ) {
-        val server = app.get(url).document.selectFirst(".picasa")?.nextElementSibling()?.data()
-
-        val source = "[${server!!.substringAfter("sources: [").substringBefore("],")}]".trimIndent()
-        val trackers = server.substringAfter("tracks:[").substringBefore("],")
-            .replace("//language", "")
-            .replace("file", "\"file\"")
-            .replace("label", "\"label\"")
-            .replace("kind", "\"kind\"").trimIndent()
-
-        tryParseJson<List<Sources>>(source)?.map {
-            sourceCallback(
-                newExtractorLink(
-                    name,
-                    "Drive",
-                    fixUrl(it.file),
-                    referer = "https://motonews.club/",
-                    quality = getQualityFromName(it.label)
-                )
-            )
-        }
-
-        tryParseJson<Tracks>(trackers)?.let {
-            subCallback.invoke(
-                SubtitleFile(
-                    if (it.label.contains("Indonesia")) "${it.label}n" else it.label,
-                    it.file
-                )
-            )
-        }
-
-    }
-
-    override suspend fun loadLinks(
-        data: String,
-        isCasting: Boolean,
-        subtitleCallback: (SubtitleFile) -> Unit,
-        callback: (newExtractorLink) -> Unit
-    ): Boolean {
-        val document = app.get(data).document
-        val sources = document.select(".mobius > .mirror > option").mapNotNull {
-            fixUrl(Jsoup.parse(base64Decode(it.attr("value"))).select("iframe").attr("src"))
-        }
-
-        sources.map {
-            it.replace("https://ndrama.xyz", "https://www.fembed.com")
-        }.apmap {
-            when {
-                it.contains("motonews") -> invokeDriveSource(
-                    it,
-                    this.name,
-                    subtitleCallback,
-                    callback
-                )
-
-                else -> loadExtractor(it, "$mainUrl/", subtitleCallback, callback)
-            }
-        }
-
-        return true
-    }
-
-}
-
+        @JsonProperty("type")
