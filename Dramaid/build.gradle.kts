@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.0"
+    id("org.jetbrains.kotlin.jvm")
 }
 
 group = "com.example.dramaid"
