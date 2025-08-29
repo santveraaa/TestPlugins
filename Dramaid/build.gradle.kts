@@ -1,35 +1,30 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
-
 plugins {
-    kotlin("android") // Ganti dengan kotlin android
-    id("com.android.library") // Tambahkan plugin android library
+    kotlin("jvm") version "1.9.0"
 }
 
-version = "13"
+group = "com.example.dramaid"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://jitpack.io") }
+    google()
+    maven("https://jitpack.io")
 }
 
 dependencies {
-	implementation(kotlin("stdlib"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-    implementation("org.jsoup:jsoup:1.17.1")
+    implementation(fileTree("libs") { include("*.jar") })
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
 }
 
-// Tambahkan konfigurasi Java plugin
-configure<JavaPluginExtension> {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+// SOLUSI: Tambahkan JVM toolchain
+kotlin {
+    jvmToolchain(17)
 }
 
-tasks {
-    withType<KotlinCompile> {
-        kotlinOptions {
-            jvmTarget = "17"
-            freeCompilerArgs = listOf("-Xjsr305=strict")
-        }
+// Opsional: Konfigurasi tambahan
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions {
+        jvmTarget = "17"
+        freeCompilerArgs = listOf("-Xjsr305=strict")
     }
 }
