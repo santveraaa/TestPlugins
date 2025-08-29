@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
     implementation(fileTree("libs") { include("*.jar") })
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.0")
 }
 
 // SOLUSI: Tambahkan JVM toolchain
